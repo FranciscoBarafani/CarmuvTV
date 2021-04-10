@@ -4,7 +4,13 @@
   align-items: center;
   justify-content: center;
   height: 5rem;
-  background-color: gray;
+  background-color: black;
+  margin-top: 1rem;
+
+  p,
+  h4 {
+    color: white;
+  }
 
   &_bottom {
     width: 90%;

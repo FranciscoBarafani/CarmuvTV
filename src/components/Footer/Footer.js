@@ -12,7 +12,7 @@ export default function Footer() {
           <h4>Políticas de privacidad</h4>
         </div>
         <div className="footer_bottom-socialmedia">
-          Seguinos en nuestras redes
+          <h4>Seguinos en nuestras redes</h4>
         </div>
       </div>
     </div>

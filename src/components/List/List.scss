@@ -1,0 +1,25 @@
+.list {
+  .ant-card {
+    border-radius: 1rem;
+  }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &_item {
+    margin: 1rem;
+
+    img {
+      padding: 0.5rem;
+    }
+
+    &-pricetag {
+      border-top: 2px solid purple;
+      margin-top: 1rem;
+      padding: 0.5rem;
+    }
+  }
+}
