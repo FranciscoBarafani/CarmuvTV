@@ -1,10 +1,8 @@
 .carousel {
 
-  .ant-carousel {
-    height: 400px !important;
-    width: 50% !important;
-  }
-
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgb(204, 204, 204);
   .img {
     width: auto;
     height: 400px;

@@ -1,9 +1,14 @@
 .detail-layout{
-
+  margin-top: 2rem;
+  height: 100% !important; 
   &-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    &_specs {
+      margin-left: 10rem;
+    }
   }
 }
