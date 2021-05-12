@@ -1,5 +1,4 @@
-import "./App.css";
-import "antd/dist/antd.css";
+import "./App.less";
 import MainLayout from "./layouts/MainLayout";
 import SpatialNavigation from 'react-js-spatial-navigation'
 
