@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import "./MainLayout.scss";
 
 import Header from "../components/Header/Header";
@@ -12,7 +12,7 @@ export default function MainLayout() {
   return (
     <div className="main-layout">
       <div className="main-layout_header">
-        <Header />
+        <Header  basename="/carmutv"/>
       </div>
       <div className="main-layout_body">
         <Router>
