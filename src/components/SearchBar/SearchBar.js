@@ -1,5 +1,6 @@
 import React from "react";
 import "./SearchBar.scss";
+import { Focusable } from "react-js-spatial-navigation";
 import { Input } from "antd";
 
 export default function SearchBar() {
@@ -7,7 +8,9 @@ export default function SearchBar() {
 
   return (
     <div className="searchbar">
-      <Search placeholder="Que estas buscando?" size="large" />
+      <Focusable>
+        <Search placeholder="Que estas buscando?" size="large" />
+      </Focusable>
     </div>
   );
 }

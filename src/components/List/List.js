@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./List.scss";
+import { useHistory } from "react-router-dom";
 import { Card } from "antd";
 import { Focusable } from "react-js-spatial-navigation";
 import { Link } from "react-router-dom";
 
 export default function List(props) {
+  const history = useHistory();
   const { Meta } = Card;
   const { data } = props;
 
@@ -13,10 +15,17 @@ export default function List(props) {
     //setFocusedVehicle(id)
   };
 
+  const onEnter = (vehicleId) => {
+    history.push(`/detail/${vehicleId}`);
+  };
+
   const ListItems = () =>
     data.map((vehicle) => (
       <Link to={`/detail/${vehicle.id}`}>
-        <Focusable onFocus={() => onFocus(vehicle.id)}>
+        <Focusable
+          onFocus={() => onFocus(vehicle.id)}
+          onEnterPress={() => onEnter(vehicle.id)}
+        >
           <Card
             className="list_item"
             style={{ width: 300 }}
