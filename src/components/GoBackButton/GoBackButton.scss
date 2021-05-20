@@ -1,10 +1,13 @@
 .goback {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 50px;
-  height: 100px;
-  width: 200px;
-  border-radius: 15px;
-  border: 2px solid #7d10ff;
+
+  .focusable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    height: 100px;
+    width: 200px;
+    border-radius: 15px;
+    border: 2px solid #7d10ff;
+  }
 }

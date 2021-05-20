@@ -24,7 +24,7 @@ export default function List(props) {
       <Link to={`/detail/${vehicle.id}`}>
         <Focusable
           onFocus={() => onFocus(vehicle.id)}
-          onEnterPress={() => onEnter(vehicle.id)}
+          onClickEnter={() => onEnter(vehicle.id)}
         >
           <Card
             className="list_item"
